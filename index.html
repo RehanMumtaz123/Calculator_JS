@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(16, 129, 133);">
+    <br>
+    <h1 class="hd">
+        Simple Calculator
+        <br> Made By : Rehan Mumtaz 
+    <br> Roll # WM - 9629
+    </h1>
+    <br>
+    <br>
+    <div class="main">
+        <div class="result">
+            <input id="result" type="text">
+        </div>
+        <div>
+
+            <button class="clearbtn" onclick="clearresult()">
+                AC
+            </button>
+            <button class="btn0" onclick="getnumber('%')">
+                %
+            </button>
+        </div>
+        <div class="one">
+            <button class="btn" onclick="getnumber('7')">7</button>
+            <button class="btn" onclick="getnumber('8')">8</button>
+            <button class="btn" onclick="getnumber('9')">9</button>
+            <button class="btn" onclick="getnumber('*')">X</button>
+        </div>
+        <div class="one">
+            <button class="btn" onclick="getnumber('4')">4</button>
+            <button class="btn" onclick="getnumber('5')">5</button>
+            <button class="btn" onclick="getnumber('6')">6</button>
+            <button class="btn" onclick="getnumber('-')">-</button>
+        </div>
+        <div class="one">
+            <button class="btn" onclick="getnumber('1')">1</button>
+            <button class="btn" onclick="getnumber('2')">2</button>
+            <button class="btn" onclick="getnumber('3')">3</button>
+            <button class="btn" onclick="getnumber('+')">+</button>
+        </div>
+        <div class="one">
+            <button class="btnBtm" onclick="getnumber('0')">0</button>
+            <button class="btnBtm" onclick="getnumber('.')">.</button>
+            <button id="btnBtm" onclick="getresult()">=</button>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
